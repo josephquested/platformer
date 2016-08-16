@@ -26,6 +26,11 @@ public class Platform : MonoBehaviour {
 		}
 	}
 
+	void Break ()
+	{
+		rb.velocity = Vector3.zero;
+	}
+
 	void OnCollisionEnter (Collision collision)
 	{
 		if (collision.gameObject.tag == "Platform")
